@@ -1,7 +1,7 @@
 class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:
         
-        lo = min(weights)
+        lo = max(weights)
         hi = sum(weights)
         ans = 0
         while lo<=hi:
@@ -21,8 +21,7 @@ class Solution:
         for i in range(0,len(weights)):
             wt = wt+weights[i]
             
-            if weights[i]>target:
-                return False
+           
             
             if wt > target:
                 days=days+1
