@@ -23,5 +23,4 @@ class Solution:
         if days<=targetDays:
             return True
         return False
-                
         
