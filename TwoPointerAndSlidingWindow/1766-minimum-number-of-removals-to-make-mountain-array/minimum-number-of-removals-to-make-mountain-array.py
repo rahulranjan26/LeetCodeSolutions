@@ -1,7 +1,7 @@
 class Solution:
     def minimumMountainRemovals(self, nums: List[int]) -> int:
         dpf = self.findLIS(nums)
-        dpb = self.findLDS(nums)
+        dpb = self.findLIS(nums[::-1])[::-1]
 
         x = 0
         for i in range(len(dpf)):
