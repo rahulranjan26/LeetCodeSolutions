@@ -3,11 +3,6 @@ class Solution:
         self.bfs(grid,row,col,color)
         return grid
 
-
-
-
-
-
     def bfs(self,grid, row, col, color):
         queue = [[row, col]]
         visited = [[False] * len(grid[0]) for _ in range(len(grid))]
