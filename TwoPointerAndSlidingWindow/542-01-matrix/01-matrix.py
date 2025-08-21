@@ -11,6 +11,7 @@ class Solution:
         
         while queue:
             x,y=queue.popleft()
+
             for dx,dy in [[-1,0],[1,0],[0,-1],[0,1]]:
                 xx = x+dx
                 yy = y+dy
